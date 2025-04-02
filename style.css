@@ -1,0 +1,527 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+        
+:root {
+    --vh: 1vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background-color: #0064FF;
+    overflow-y: hidden;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    width: 390px;
+    height: calc(calc(var(--vh, 1vh) * 100) - 40px);
+    padding: 10px;
+    padding-top: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #F5F7F8;
+    border-radius: 30px;
+    position: relative;
+}
+.fixed {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #F5F7F8;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    gap: 219px;
+    align-self: stretch;
+    margin-bottom: 10px;
+}
+.navigation-bar .time {
+    display: flex;
+    width: 66px;
+    padding: 0px 6px 0px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: #000;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 590;
+    line-height: 22px; /* 129.412% */
+}
+.navigation-bar .levels {
+    width: 88px;
+    height: 14px;
+}
+
+.header {
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+.left {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+.left .img {
+    width: 18px;
+    height: 19px;
+    aspect-ratio: 18/19;
+    background: url('src/left.png') transparent 0% / cover no-repeat;
+}
+.left .text {
+    color: #8B95A1;
+    font-size: 17px;
+    font-weight: 500;
+}
+.left svg {
+    width: 5px;
+    height: 9.5px;
+    stroke-width: 1.5px;
+    stroke: #D1D6DB;
+}
+.right {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+.right1 img {
+    display: flex;
+    width: auto;
+    height: 25px;
+}
+.right2 img {
+    display: flex;
+    width: auto;
+    width: 28px;
+    height: 27px;
+    margin-bottom: 5px;
+}
+
+
+.box {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    border-radius: 20px;
+    background: #FFF;
+}
+
+
+.box-1 {
+    padding: 20px 23px;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.box-1 img {
+    width: 32px;
+    height: 32px;
+    aspect-ratio: 1/1;
+}
+.box-1 .group {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.box-1 .group .text1 {
+    color: #6B7684;
+    font-family: "Pretendard Variable";
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.box-1 .group .text2 {
+    color: #3182F6;
+    font-family: "Pretendard Variable";
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+.box-2 {
+    justify-content: space-between;
+    padding: 16px 20px;
+    flex-shrink: 0;
+}
+.box-2 .text {
+    color: #333D4B;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+.box-3, .box-4{
+    padding: 0px 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+.box-items {
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.box-items .box-item {
+    display: flex;
+    padding: 1px 0px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+.box-items .box-item .group {
+    display: flex;
+    padding: 7px 0px;
+    align-items: center;
+    gap: 12px;
+}
+.box-item img {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+.box-item .text1 {
+    color: #191F28;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 1.5px;
+}
+.box-item .text2 {
+    color: #6B7684;
+    font-size: 12.8px;
+    font-weight: 500;
+}
+.box-item .btn {
+    display: flex;
+    height: 32px;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #F2F3F5;
+    color: #4E5968;
+    font-size: 12.8px;
+    font-weight: 500;
+}
+
+
+.box-3 .btns {
+    display: flex;
+    width: 370px;
+    padding: 0px 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 20px 20px;
+}
+.box-3 .btns-item {
+    display: flex;
+    width: 90px;
+    height: 44px;
+    padding: 14px 28px;
+    align-items: center;
+    gap: 3px;
+    flex-shrink: 0;
+    border: 0.5px solid #EBEDF0;
+    border-bottom: none;
+}
+.box-3 .btns-item.corner-left {
+    border-left: none;
+    border-bottom: none;
+}
+.box-3 .btns-item.corner-right {
+    border-right: none;
+    border-bottom: none;
+}
+.box-3 .btns-item .title {
+    color: #4E5968;
+    font-size: 12.8px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.box-3 .btns-item .number {
+    color: #8B95A1;
+    font-size: 12.8px;
+    font-weight: 500;
+}
+
+.box-5 {
+    padding: 0px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    flex-shrink: 0;
+}
+.box-5 .box-item {
+    display: flex;
+    width: 330px;   
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 15px;
+}
+.box-5 .box-item .group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.box-5 .box-item .group img {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+.box-5 .box-item .text {
+    color: #191F28;
+    font-size: 15px;
+    font-weight: 600;
+}
+.box-5 .btn {
+    display: flex;
+    width: 68px;
+    height: 30px;
+    padding: 8px 15px 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background: #FFF3DE;
+    color: #DD7D02;
+    font-size: 12.8px;
+    font-weight: 700;  
+    white-space: nowrap;
+}
+.box-5 .btns {
+    display: flex;
+    height: 44px;
+    padding: 0px 5px;
+    align-items: center;
+    flex-shrink: 0;
+}
+.box-5 .btns-item {
+    display: flex;
+    width: 120px;
+    height: 44px;
+    padding: 14px 34px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border: 0.5px solid #EBEDF0;
+    border-bottom: none;
+    color: #4E5968;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.box-5 .btns-item.corner-left {
+    border-left: none;
+    border-bottom: none;
+}
+.box-5 .btns-item.corner-right {
+    border-right: none;
+    border-bottom: none;
+}
+
+.box-6 {
+    padding: 17px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+.box-6 .box-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.box-6 .box-item img {
+    width: 45px;
+    height: 45px;
+    aspect-ratio: 1/1;
+}
+.box-6 .box-item .text {
+    display: flex;
+    width: 187px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+.box-6 .box-item .text1 {
+    align-self: stretch;
+    color: #333D4B;
+    font-size: 17px;
+    font-weight: 600;
+}
+.box-6 .box-item .text2 {
+    align-self: stretch;
+    color: #6B7684;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.box-6 .box-item .text3 {
+    align-self: stretch;
+    color: #B0B8C0;
+    font-size: 7px;
+    font-weight: 500;
+}
+
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #333D4B;
+    font-size: 17px;
+    font-weight: 600;
+    width: 187px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.boxes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-7, .box-8 {
+    display: flex;
+    width: 180px;
+    padding: 13px 19px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+.box-7 .text, .box-8 .text {
+    color: #191F28;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 150%; /* 22.5px */
+}
+.box-7 {
+    background: url(src/box7.png) transparent 100% / cover no-repeat;
+}
+.box-8 {
+    background: url(src/box8.png) transparent 100% / cover no-repeat;
+}
+
+.box-9 {
+    padding: 17px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 17px;
+    flex-shrink: 0;
+    margin-bottom: 100px;
+}
+.box-9 .box-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 325px;
+    margin-bottom: 10px;
+}
+.box-9 .box-item .group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.box-9 .box-item img {
+    width: 20px;
+    height: auto;
+    border-radius: 10px;
+}
+.box-9 .box-item .group .text {
+    color: #191F28;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    
+    display: flex;
+    width: 390px;
+    height: 82px;
+    padding: 8px 39px;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+
+    border-radius: 25px 25px 30px 30px;
+    background: #FFFFFF;
+
+    gap: 10px;
+}
+.footer .btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+.footer .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.footer .btn svg {
+    width: 21px;
+    height: 21px;
+    display: block;
+}
+.footer .btns .text {
+    display: flex;
+    width: auto;
+    padding: 0;
+    margin-top: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #6B7684;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.footer .btn.clicked .text {
+    color: #191F28;
+}
+.footer .underbar svg {
+    width: 135px;
+    flex-shrink: 0;
+    stroke-width: 5px;
+    stroke: #808080;
+}
